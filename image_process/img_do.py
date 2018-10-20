@@ -73,7 +73,7 @@ alpha = 2
 beta = -200  
 # result1 = image*2 - 200 #直接这么处理会有问题，会不在范围  
 p = []  
-for i in xrange(256):  
+for i in range(256):  
     p.append(max(min(round(alpha * i + beta), 255), 0))  
 parray = np.array(p, np.uint8)  
 result = parray[image]  
