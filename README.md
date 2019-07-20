@@ -33,3 +33,14 @@ do something about image process, such as:
 * modules: opencv, matplot
 * image cut
 * face detect
+
+## 图像文件格式
+* jpg 
+* png
+* tif 可将多张图片合并在一个文件（多页图片）
+* bmp 
+
+## 图像模式
+* RGB
+
+ 

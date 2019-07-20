@@ -3,7 +3,9 @@
 @summary: show how to use 
 @since: 2017-11-22
 @author: Keefe Wu
+@requires: cv2
 @see: http://blog.csdn.net/topgun_chenlingyun/article/details/10582641
+https://blog.csdn.net/qq_36941368/article/details/82998296
   [ x for x in dir(cv2) if 'CV' in x ]
 '''  
 

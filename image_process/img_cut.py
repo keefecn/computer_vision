@@ -3,6 +3,7 @@
 @summary: show how to use 
 @since: 2017-11-22
 @author: Keefe Wu
+@requires: cv2
 @see: http://blog.csdn.net/liqiancao/article/details/55670749 
 @example:
 cv2.waitKey(0)  
