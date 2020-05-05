@@ -1,5 +1,5 @@
 # coding: utf-8 
-'''
+"""
 @summary:  图片合并成pdf
 @since: 2019/7/17
 @author: Keefe Wu
@@ -7,7 +7,7 @@
 @see: 
 @note: 
 convert_pdf_size: img2pdf < reportlab < PIL 
-'''
+"""
 
 import os
 

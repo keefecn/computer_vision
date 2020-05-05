@@ -1,11 +1,11 @@
 # coding: utf-8 
-'''
+"""
 @summary:  image process
 @since: 2019/7/17
 @author: Keefe Wu
 @requires: libtiff scipy
 @see: 
-'''
+"""
 import os
 import numpy as np
 

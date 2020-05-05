@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-'''
+"""
 @summary: show how to use PIL
 @since: 2019-7-20
 @author: Keefe Wu
 @requires: scikit-image
 @see: 
-'''
+"""
 from skimage import io
 
 

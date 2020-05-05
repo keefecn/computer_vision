@@ -1,12 +1,12 @@
 #!/usr/bin/env python  
-'''
+"""
 @summary: show how to use 
 @since: 2017-11-22
 @author: Keefe Wu
 @see: http://blog.csdn.net/bless2015/article/details/52082161
 @example:
 cv2.waitKey(0)  
-'''
+"""
 
 import numpy as np  
 import cv2  
@@ -14,9 +14,9 @@ import cv2.cv as cv
 from video import create_capture  
 from common import clock, draw_str  
   
-help_message = '''  
+help_message = """  
 USAGE: facedetect.py [--cascade <cascade_fn>] [--nested-cascade <cascade_fn>] [<video_source>]  
-'''  
+"""
   
 def detect(img, cascade):  
     rects = cascade.detectMultiScale(img, scaleFactor=1.3, minNeighbors=4, minSize=(30, 30), flags=cv.CV_HAAR_SCALE_IMAGE)  
@@ -31,7 +31,7 @@ def draw_rects(img, rects, color):
   
 if __name__ == '__main__':  
     import sys, getopt  
-    print help_message  
+    print (help_message)
   
     args, video_src = getopt.getopt(sys.argv[1:], '', ['cascade=', 'nested-cascade='])  
     try: video_src = video_src[0]  

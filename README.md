@@ -41,6 +41,9 @@ do something about image process, such as:
 * bmp 
 
 ## 图像模式
-* RGB
+* RGB  Reb/Green/Blue  
+* CMYK
+* Lab（三个）
+* HSV（三个）  Hue/Solution/V
 
  

@@ -1,11 +1,11 @@
 # coding: utf-8 
-'''
+"""
 @summary:  图片合并成pdf
 @since: 2019/7/17
 @author: Keefe Wu
 @requires: PyPDF2 PyMUPDF
 @see: https://blog.csdn.net/u013421629/article/details/77703582
-'''
+"""
 
 import os
 import time

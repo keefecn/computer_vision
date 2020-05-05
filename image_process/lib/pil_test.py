@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-'''
+"""
 @summary: show how to use PIL
 @since: 2019-7-20
 @author: Keefe Wu
 @requires: pillow
 @see: 
-'''
+"""
 
 import numpy as np
 from PIL import Image
