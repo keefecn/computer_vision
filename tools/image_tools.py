@@ -1,13 +1,13 @@
-#!/usr/bin/env python 
-# encoding: utf-8 
+#!/usr/bin/env python3
+# encoding: utf-8
 """
-@summary: show how to use matplotlib.pyplot
- 打印通道信息RGB/HSV
-@since: 2017-11-22
+@summary:
+ 打印图像通道信息： RGB/HSV
+@since: 2020-5-31
 @author: Keefe Wu
 @requires: matplotlib
-
 """
+
 __author__ = 'Keefe Wu'
 
 import matplotlib.pyplot as plt
@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 def get_image(path=''):
     img = plt.imread(path)
     print(type(img))
-    if img.any() == None:  # judge image 
+    if img.any() == None:  # judge image
         print('This file may not be available')
     return img
 
@@ -60,7 +60,7 @@ def show_channels(img):
     """ show channel 打印通道 """
     import cv2
     def show_one_channel(channel, title=''):
-        # 只打印一个通道
+        # 只打印一个通道 的图片
         plt.plot(channel[200, :])
         plt.title(title)
         plt.show()
@@ -71,16 +71,17 @@ def show_channels(img):
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         fruits_all = [img, img[:, :, 0], img[:, :, 1], img[:, :, 2]]
         channels = ["RGB", "red", "green", "blue"]
-        for i in range(4):  # 4个分量打印在一张图里
-            plt.subplot(2, 2, i + 1)
+        for i in range(4):  # 4个分量打印在一张图里，图像效果
+            plt.subplot(2, 2, i + 1)  # subplot子图打印， 序号1,2,3,4
             plt.imshow(fruits_all[i], cmap=plt.cm.gray)
             plt.title(channels[i])
         plt.show()
-        for fruit in fruits_all:
-            print(fruit.shape)  # (行，列，色彩分量/通道数)
 
+        for fruit in fruits_all:  # 打印每个通道的值：  (行，列，色彩分量/通道数)
+            print(fruit.shape)
         for i in range(4):  # 每个分量单独打印
             show_one_channel(fruits_all[i], channels[i])
+            pass
 
     def show_hsl(img):
         """ 打印 HSL 通道 """
@@ -124,7 +125,7 @@ def show_click(img):
 
 
 if __name__ == '__main__':
-    img = get_image("../../data/test2.png")
+    img = get_image("..//data/test2.png")
     # test(img)
     show_channels(img)
     # show_click(img)
